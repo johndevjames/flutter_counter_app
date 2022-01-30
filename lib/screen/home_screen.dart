@@ -71,9 +71,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       return IndexedStack(
                         index: widget.selectTabNotifier.value,
                         children: <Widget>[
-                          FirstScreen(counterList: counterList,check: value,callBack:(int) => _incrementCounter(int)),
-                          SecondTabScreen(counterList: counterList,check: value,callBack:(int) => _incrementCounter(int)),
-                          ThirdTabScreen(counterList: counterList,check: value,callBack:(int) => _incrementCounter(int)),
+                          FirstScreen(counterList: counterList,counterPosition: value,callBack:(int) => _incrementCounter(int)),
+                          SecondTabScreen(counterList: counterList,counterPosition: value,callBack:(int) => _incrementCounter(int)),
+                          ThirdTabScreen(counterList: counterList,counterPosition: value,callBack:(int) => _incrementCounter(int)),
                         ],
 
                       );
